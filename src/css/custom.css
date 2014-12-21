@@ -1,0 +1,39 @@
+.icon::before {
+  z-index: 10;
+  display: inline-block;
+  margin: 0 0.4em 0 0;
+  vertical-align: middle;
+  text-transform: none;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 1.3em;
+  /*font-family: 'stroke7pixeden';*/
+  font: normal normal normal 24px/1 FontAwesome;
+  line-height: 1;
+  speak: none;
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-briefcase::before {
+  content: "\f0b1";
+}
+.icon-user::before {
+  content: "\f007";
+}
+.icon-envelope::before {
+  content: "\f0e0";
+}
+
+.portfolio {
+  max-width: 768px;
+  margin: auto;
+  margin-top: 32px;
+  border: 1px solid;
+}
+
+.tabs a {
+  text-decoration: none;
+}
+
