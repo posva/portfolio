@@ -37,3 +37,6 @@
   text-decoration: none;
 }
 
+.img-rounded {
+  border-radius: 5%;
+}

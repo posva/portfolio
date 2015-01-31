@@ -157,7 +157,8 @@
   transform: translate3d(-200%,0,0);
 }
 
-.tabs-style-linemove nav li:nth-child(2).tab-current~li:last-child::before {
+.tabs-style-linemove nav li:nth-child(2).tab-current~li:last-child::before,
+.tabs-style-linemove nav li:nth-child(3).tab-current~li:last-child::before {
   -webkit-transform: translate3d(-100%,0,0);
   transform: translate3d(-100%,0,0);
 }
@@ -225,6 +226,12 @@ input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
+.column {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
 @media (min-width:400px) {
   .container {
     width: 85%;
@@ -235,6 +242,18 @@ input::-moz-focus-inner {
 @media (min-width:550px) {
   .container {
     width: 80%;
+  }
+
+  .column {
+    margin-left: 4%;
+  }
+
+  .column:first-child {
+    margin-left: 0;
+  }
+
+  .one-half.column {
+    width: 48%;
   }
 }
 
@@ -250,12 +269,70 @@ body {
   color: #222;
 }
 
+h4 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem;
+}
+
+@media (min-width:550px) {
+  h4 {
+    font-size: 3rem;
+  }
+}
+
 a {
   color: #1EAEDB;
 }
 
 a:hover {
   color: #0FA0CE;
+}
+
+.button {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button:focus,
+.button:hover {
+  color: #333;
+  border-color: #888;
+  outline: 0;
+}
+
+.button.button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0;
+}
+
+.button.button-primary:focus,
+.button.button-primary:hover {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB;
 }
 
 ul {
@@ -271,6 +348,10 @@ li {
   margin-bottom: 1rem;
 }
 
+.button {
+  margin-bottom: 1rem;
+}
+
 p,
 ul {
   margin-bottom: 2.5rem;
@@ -278,6 +359,11 @@ ul {
 
 p {
   margin-top: 0;
+}
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .container:after,
@@ -315,6 +401,10 @@ p {
 
 .tabs a {
   text-decoration: none;
+}
+
+.img-rounded {
+  border-radius: 5%;
 }
 
 /*!
